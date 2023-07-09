@@ -1,0 +1,213 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    padding: 1px 0;
+  }
+  
+  .container .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 60px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hamburger Menu */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .burger .line1,
+  .burger .line2,
+  .burger .line3 {
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .burger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .burger.active .line2 {
+    opacity: 0;
+  }
+  
+  .burger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Home Section */
+  #home {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  #home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+  }
+  
+  /* About Us Section */
+  #about {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  #about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Services Section */
+  #services {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  #services h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .service img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Us Section */
+  #contact {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  #contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
